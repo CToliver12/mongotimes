@@ -1,0 +1,15 @@
+<h3>Saved Articles</h3>
+
+	{{#each articles}}
+		{{#if this.saved}}
+		<div class="card w-50">
+		<div class="card-block">
+			<a href="{{this.link}}" target="_blank">
+				<h4 class="card-title">{{this.title}}</h4>
+			</a>
+			<p class="card-text">Comment!</p>
+			<p class="card-text">Save!</p>
+		</div>
+		</div>
+		{{/if}}
+	{{/each}}
